@@ -21,10 +21,6 @@
 # Glide
 -keep public class * implements com.bumptech.glide.module.GlideModule
 -keep public class * extends com.bumptech.glide.module.AppGlideModule
--keep public enum com.bumptech.glide.load.ImageHeaderParser$** {
-  **[] $VALUES;
-  public *;
-}
 
 
 # butter knife
@@ -47,16 +43,16 @@
 
 
 
-# ---------- NẾU CALL API THÌ ADD MÀN SPLASH (MÀN CALL API) VÀO  -----------------
+# ---------- NẾU CALL API HOẶC DÙNG FIREBASE READTIME THÌ ADD CLASS VS MODEL SỬ DỤNG   -----------------
 
--keep class pakage.SplashActivity.** { *; }
-
-
+-keep class pakage.SplashActivity.** { *; }  
 
 
 
 
-# ---------- TÙY TỪNG PROJECT CÓ DÙNG KO NẾU DÙNG THÌ ADD VÀO ---------- 
+
+
+# ---------- TÙY TỪNG PROJECT CÓ DÙNG KO NẾU DÙNG THÌ ADD OR NHỮNG CLASS STATIC ---------- 
 
 #custom views
 -keep public class * extends android.view.View {
