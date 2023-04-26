@@ -45,8 +45,9 @@
 
 # ---------- NẾU CALL API HOẶC DÙNG FIREBASE READTIME THÌ ADD CLASS VS MODEL SỬ DỤNG   -----------------
 
--keep class pakage.SplashActivity.** { *; }  
 
+-keep class pakagename.SplashActivity.** { *; }  
+-keep class pakagename.api.** { *; }  
 
 
 
