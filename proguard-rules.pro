@@ -53,34 +53,3 @@
 
 
 
-# ---------- TÙY TỪNG PROJECT CÓ DÙNG KO NẾU DÙNG THÌ ADD OR NHỮNG CLASS STATIC ---------- 
-
-#custom views
--keep public class * extends android.view.View {
-      public <init>(android.content.Context);
-      public <init>(android.content.Context, android.util.AttributeSet);
-      public <init>(android.content.Context, android.util.AttributeSet, int);
-      public void set*(...);
-}
-
--keepclasseswithmembers class * {
-    public <init>(android.content.Context, android.util.AttributeSet);
-}
-
--keepclasseswithmembers class * {
-    public <init>(android.content.Context, android.util.AttributeSet, int);
-}
-
--keepclassmembers class * extends android.content.Context {
-    public void *(android.view.View);
-    public void *(android.view.MenuItem);
-}
-
-# enum
--keepclassmembers enum * {
-    public static **[] values();
-    public static ** valueOf(java.lang.String);
-}
-
--dontnote java.nio.file.Files, java.nio.file.Path
--dontnote **.ILicensingService
